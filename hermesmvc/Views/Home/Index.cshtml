@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Hermes</h1>
+    <p class="lead">Trade promo planning tool for better and quicker business decisions</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Customers</h2>
+        <p>
+            @Html.ActionLink("Countries", "Index", "Countries")
+        </p>
+        <p>
+            @Html.ActionLink("Channels", "Index", "Channels")
+        </p>
+        <p>
+            @Html.ActionLink("Customers", "Index", "Customers")
+        </p>
+
+
+
+    </div>
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>
+            @Html.ActionLink("Segments", "Index", "Segments")
+        </p>
+        <p>
+            @Html.ActionLink("Brands", "Index", "Brands")
+        </p>
+        <p>
+            @Html.ActionLink("Technologies", "Index", "Technologies")
+        </p>
+        <p>
+            @Html.ActionLink("PromoGroups", "Index", "PromoGroups")
+        </p>
+        <p>
+            @Html.ActionLink("Products", "Index", "Products")
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Fixed TE</h2>
+        <p>
+            @Html.ActionLink("FixedTEs", "Index", "FixedTEs")
+        </p>
+        <p>
+            @Html.ActionLink("FixedTE_details", "Index", "FixedTE_details")
+        </p>
+        <p>
+            @Html.ActionLink("FixedTE_types", "Index", "FixedTE_types")
+        </p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>Promotions</h2>
+        <p>
+            @Html.ActionLink("PromotionsStatuses", "Index", "PromotionsStatuses")
+        </p>
+        <p>
+            @Html.ActionLink("PromotionsTypes", "Index", "PromotionsTypes")
+        </p>
+        <p>
+            @Html.ActionLink("Promotions", "Index", "Promotions")
+        </p>
+        <p>
+            @Html.ActionLink("PromotionsDetails", "Index", "PromotionsDetails")
+        </p>
+    </div>
+</div>

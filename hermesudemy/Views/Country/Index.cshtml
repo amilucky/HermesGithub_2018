@@ -1,0 +1,25 @@
+﻿
+
+@model hermesudemy.ViewModels.RandomCountryViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Countries:</h2>
+
+@if (Model.Country.Count == 0)
+{
+    <text> No Country </text>
+}
+
+else
+{
+    <ul>
+        @foreach (var Country in Model.Country)
+        {
+            <li>@Country.name </li>
+        }
+
+    </ul>
+}

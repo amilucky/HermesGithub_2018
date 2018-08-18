@@ -1,0 +1,25 @@
+﻿
+
+@model hermesudemy.ViewModels.RandomCountryViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Channel:</h2>
+
+@if (Model.Channel.Count == 0)
+{
+    <text> No Channel </text>
+}
+
+else
+{
+    <ul>
+        @foreach (var Channel in Model.Channel)
+        {
+            <li>@Channel.name </li>
+        }
+
+    </ul>
+}

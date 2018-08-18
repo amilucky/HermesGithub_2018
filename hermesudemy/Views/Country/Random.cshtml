@@ -1,0 +1,53 @@
+﻿
+
+@model hermesudemy.ViewModels.RandomCountryViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+
+@{
+    var className = Model.Channel.Count > 0 ? "popular" : null;
+}
+@*
+    <h2 class="@className">@Model.Country.name</h2>
+*@
+
+@if (Model.Country.Count == 0)
+{
+    <text> No Country </text>
+}
+
+else
+{
+    <ul>
+        @foreach (var Country in Model.Country)
+        {
+            <li>@Country.name </li>
+        }
+
+    </ul>
+}
+
+
+@if (Model.Channel.Count == 0)
+{
+    <text> No Channel </text>
+}
+
+else
+{
+    <ul>
+        @foreach (var Channel in Model.Channel)
+        {
+            <li>@Channel.name </li>
+        }
+
+    </ul>
+}
+
